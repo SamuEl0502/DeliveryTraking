@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2023",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    // tsx ejecuta el .ts directamente; tsc solo revisa tipos (no genera .js)
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    // Obliga a escribir `import type` para lo que solo es un tipo
+    "verbatimModuleSyntax": true,
+    "noUncheckedIndexedAccess": true,
+    "skipLibCheck": true,
+    "types": ["node"]
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
