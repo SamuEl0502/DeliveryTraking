@@ -6,6 +6,7 @@ import { correlationId } from './middlewares/correlationId.ts';
 import { rateLimiter } from './middlewares/rateLimiter.ts';
 import { errorHandler, notFound } from './middlewares/errorHandler.ts';
 import { healthRouter } from './routes/health.routes.ts';
+import { aircraftRouter } from './routes/aircraft.routes.ts';
 
 export const app = express();
 
@@ -20,7 +21,7 @@ app.use(express.json({ limit: '100kb' }));
 app.use('/health', healthRouter);
 
 app.use('/api', rateLimiter);
-// Aquí se montarán las rutas /api/... (Bloque 2 en adelante)
+app.use('/api/aircraft', aircraftRouter);
 
 // Siempre al final: 404 y luego el manejador global de errores
 app.use(notFound);
