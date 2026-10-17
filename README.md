@@ -1,6 +1,6 @@
-# DeliveryTraking — Backend
+# Delivery Tracking con tracking geoespacial en vivo (WebSockets, suavizado de trayectoria en el frontend y recálculo dinámico de ETA)
 
-Rastreo de paquetes enviados en vuelos dentro de EE. UU., con la posición del avión en vivo desde OpenSky Network.
+Sistema robusto de rastreo geoespacial en tiempo real de paquetes y envíos aéreos, diseñado con un backend modular y seguro que combina la telemetría en vivo de aeronaves (OpenSky Network) con gestión eficiente de caché y comunicación en tiempo real.
 
 ## Stack
 
