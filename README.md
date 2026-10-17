@@ -61,6 +61,13 @@ Más detalle, archivo por archivo, en [`backend/EXPLICACION.md`](backend/EXPLICA
 
 ## Estado actual
 
+- `Servicio: OpenSky Network API
+
+- `Evento: Creación y publicación de credenciales de API para la integración del servicio de rastreo de aeronaves en vivo.
+  
+- `Detalles: Las credenciales OAuth2 (`OPENSKY_CLIENT_ID` y `OPENSKY_CLIENT_SECRET`) han sido gestionadas y publicadas para habilitar el consumo autenticado del servicio de telemetría.
+
+
 **Funciona hoy**
 - `GET /health`, con el header `x-correlation-id` y logs estructurados.
 - `GET /api/aircraft`: aviones reales sobre EE. UU. (OpenSky con OAuth2 y caché en memoria).
